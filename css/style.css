@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Josefin Sans";
+  src: url(../fonts/JosefinSans-Regular.woff2),
+    url(../fonts/JosefinSans-Regular.woff);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cormorant Infant";
+  src: url(../fonts/CormorantInfant-Regular.woff2),
+    url(../fonts/CormorantInfant-Regular.woff);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Cormorant Infant Bold";
+  src: url(../fonts/CormorantInfant-Bold.woff2),
+    url(../fonts/CormorantInfant-Bold.woff);
+  font-style: normal;
+  font-weight: 700;
+}
+
+:root {
+  --font-family: "Josefin Sans";
+  --second-family: "Cormorant Infant";
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background: #292e36;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+.header__top::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  left: calc(-50vw + 50%);
+  width: 100vw;
+  border-bottom: 1px solid #5c6168;
+}
+
+.phone-btn,
+.reservation-btn {
+  border: 2px solid #e1b168;
+  background-color: transparent;
+  padding: 20px 50px;
+  color: #fff;
+  font-family: var(--font-family);
+  text-align: center;
+  font-size: 22px;
+}
+
+.phone-btn:hover {
+  background-color: #e1b168;
+  cursor: pointer;
+}
+
+.reservation-btn {
+  color: #292e36;
+  background-color: #e1b168;
+}
+
+.reservation-btn:hover {
+  cursor: pointer;
+}
+
+.header__bottom {
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__list {
+ padding: 20px 0;
+}
+.menu__list+.menu__list {
+  padding-left: 60px;
+}
+
+.menu__list-link:hover {
+  color: #e1b168;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo-list+.header__logo-list {
+  margin-left: 20px;
+}
