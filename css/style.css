@@ -13,6 +13,7 @@
   font-style: normal;
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Cormorant Infant Bold";
   src: url(../fonts/CormorantInfant-Bold.woff2),
@@ -40,8 +41,15 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
 li {
   list-style: none;
+}
+
+button {
+  background-color: transparent;
+  font-family: var(--font-family);
+  cursor: pointer;
 }
 
 .container {
@@ -62,23 +70,22 @@ li {
   padding-bottom: 50px;
   position: relative;
 }
+
 .header__top::after {
   content: "";
   position: absolute;
   bottom: 0;
   height: 1px;
   left: calc(-50vw + 50%);
-  width: 100vw;
+  width: 99vw;
   border-bottom: 1px solid #5c6168;
 }
 
 .phone-btn,
 .reservation-btn {
   border: 2px solid #e1b168;
-  background-color: transparent;
   padding: 20px 50px;
   color: #fff;
-  font-family: var(--font-family);
   text-align: center;
   font-size: 22px;
 }
@@ -110,8 +117,9 @@ li {
 }
 
 .menu__list {
- padding: 20px 0;
+  padding: 20px 0 26px 0;
 }
+
 .menu__list+.menu__list {
   padding-left: 60px;
 }
@@ -124,6 +132,87 @@ li {
   display: flex;
   justify-content: space-between;
 }
+
 .header__logo-list+.header__logo-list {
   margin-left: 20px;
+}
+
+.header__icon-instagram:hover path,
+.header__icon-facebook:hover path,
+.header__icon-twitter:hover path,
+.header__icon-pinterest:hover path {
+  fill: #e1b168;
+}
+
+.section-greetings {
+  background-color: #292E36;
+  margin-bottom: 105px;
+}
+
+.greetings__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.greetings__text {
+  color: #fff;
+}
+
+.greetings__text-title {
+  font-family: var(--second-family);
+  font-size: 100px;
+}
+
+.greetings__text-subtext {
+  font-size: 20px;
+  letter-spacing: 0.16px;
+  line-height: 150%;
+  margin-bottom: 35px;
+}
+
+.greetings__text-btn {
+  padding: 20px 57px;
+  border: 2px solid #e1b168;
+  color: #e1b168;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.16px;
+}
+
+.greetings__picture {
+  max-width: 655px;
+  object-fit: contain;
+}
+
+.section__info {
+  margin-bottom: 65px;
+}
+
+.section__info-inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section__info-item {
+  display: flex;
+  align-items: center;
+  max-width: 445px;
+}
+
+.section__info-text {
+  margin-left: 20px;
+}
+
+.section__info-title {
+  font-family: var(--second-family);
+  margin-bottom: 5px;
+  font-size: 30px;
+  line-height: 130%;
+  color: #292e36;
+}
+
+.section__info-subtext {
+  line-height: 150%;
+  color: #555;
 }
