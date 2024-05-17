@@ -146,7 +146,6 @@ button {
 
 .section-greetings {
   background-color: #292E36;
-  margin-bottom: 105px;
 }
 
 .greetings__inner {
@@ -186,12 +185,14 @@ button {
 }
 
 .section__info {
-  margin-bottom: 65px;
+  padding-bottom: 65px;
+  padding-top: 105px;
+  background-color: #fff8f5;
 }
 
 .section__info-inner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .section__info-item {
@@ -215,4 +216,75 @@ button {
 .section__info-subtext {
   line-height: 150%;
   color: #555;
+}
+
+.section__story {
+  background-color: #fff8f5;
+}
+
+.story__inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.story__img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+
+.story__text-title {
+  font-size: 40px;
+  font-family: var(--second-family);
+  line-height: 140%;
+  letter-spacing: 0.16px;
+  color: #292E36;
+}
+
+.story__text-subtitle {
+  line-height: 150%;
+  letter-spacing: 0.16px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.story__text-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.story__text-year {
+  font-family: var(--second-family);
+  line-height: 140%;
+  font-size: 40px;
+  letter-spacing: 0.16px;
+  color: #292e36;
+  margin-bottom: 15px;
+}
+
+.story__text-date span {
+  line-height: 150%;
+  letter-spacing: 0.16px;
+  color: #555;
+}
+
+.story__text-date {
+  margin-bottom: 15px;
+}
+
+.story__text-name {
+  display: flex;
+  flex-direction: column;
+  line-height: 150%;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.story__text-signature {
+  object-fit: cover;
+  width: 200px;
+  height: 107px;
+  margin-top: 20px;
 }
